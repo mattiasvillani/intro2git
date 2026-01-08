@@ -1,0 +1,51 @@
+---
+title: "Intro to Git"
+format: html
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+<!-- Place this tag in your head or just before your close body tag. -->
+
+```{=html}
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+```
+
+<img src="misc/banner_image3.png" alt="AI generated banner image" class="center" width="100%"/>
+
+<!-- Place this tag where you want the button to render. -->
+
+<a class="github-button" href="https://github.com/mattiasvillani/Intro2Git" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star mattiasvillani/Intro2Git on GitHub">Star</a>
+
+> This little presentation was initially prepared as introduction to Git for master students in Statistics at Stockholm University
+
+### Aim
+
+This presentation aims to give a very brief introduction to Git and Github.
+
+### Instructor
+
+<img src="/misc/villani_foto.jpg" width="15%"/>\
+[Mattias Villani](https://mattiasvillani.com)<br> Professor of
+Statistics<br> Stockholm University
+
+### Before the presentation
+
+- Install git
+
+- Make a GitHub account
+
+- Consider downloading the editor VS code
+
+
+### Plan and material
+
+------------------------------------------------------------------------
+
+
+
+### More material
+
+[Books, courses and podcasts etc about Git]()<br>
+

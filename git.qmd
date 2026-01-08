@@ -1,0 +1,43 @@
+---
+title: "Lecture Title"
+author: "Mattias Villani"
+format:
+  revealjs:
+    theme: simple
+    transition: none
+    center: false
+    slide-number: true
+    progress: true
+    controls: false
+    hash: true
+    width: 1600
+    height: 900
+    css: beamer-luebeck-beaver.css
+    toc: true
+    toc-depth: 2
+---
+
+## Outline
+
+-   Point 1
+-   Point 2
+
+------------------------------------------------------------------------
+
+## Section Title
+
+Text in Palatino-like serif, beaver-style accents.
+
+------------------------------------------------------------------------
+
+## Math
+
+$$
+y_t = \mu + \phi y_{t-1} + \varepsilon_t,\qquad \varepsilon_t \sim \mathcal{N}(0,\sigma^2)
+$$
+
+------------------------------------------------------------------------
+
+## Code
+
+\`\`\`{r} set.seed(1) rnorm(5)

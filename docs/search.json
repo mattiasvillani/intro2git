@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Intro to Git",
+    "section": "",
+    "text": "Star\n\nThis little presentation was initially prepared as introduction to Git for master students in Statistics at Stockholm University\n\n\nAim\nThis presentation aims to give a very brief introduction to Git and Github.\n\n\nInstructor\n\nMattias Villani Professor of Statistics Stockholm University\n\n\nBefore the presentation\n\nInstall git\nMake a GitHub account\nConsider downloading the editor VS code\n\n\n\nPlan and material\n\n\n\nMore material\nBooks, courses and podcasts etc about Git"
+  },
+  {
+    "objectID": "git.html#introduction",
+    "href": "git.html#introduction",
+    "title": "git",
+    "section": "Introduction",
+    "text": "Introduction\nWelcome to the presentation."
+  },
+  {
+    "objectID": "git.html#introduction-1",
+    "href": "git.html#introduction-1",
+    "title": "git",
+    "section": "Introduction",
+    "text": "Introduction\nWelcome to the presentation."
+  },
+  {
+    "objectID": "git.html#outline",
+    "href": "git.html#outline",
+    "title": "Lecture Title",
+    "section": "Outline",
+    "text": "Outline\n\nPoint 1\nPoint 2"
+  },
+  {
+    "objectID": "git.html#section-title",
+    "href": "git.html#section-title",
+    "title": "Lecture Title",
+    "section": "Section Title",
+    "text": "Section Title\nText in Palatino-like serif, beaver-style accents."
+  },
+  {
+    "objectID": "git.html#math",
+    "href": "git.html#math",
+    "title": "Lecture Title",
+    "section": "Math",
+    "text": "Math\n\\[\ny_t = \\mu + \\phi y_{t-1} + \\varepsilon_t,\\qquad \\varepsilon_t \\sim \\mathcal{N}(0,\\sigma^2)\n\\]"
+  },
+  {
+    "objectID": "git.html#code",
+    "href": "git.html#code",
+    "title": "Lecture Title",
+    "section": "Code",
+    "text": "Code\n```{r} set.seed(1) rnorm(5)"
+  },
+  {
+    "objectID": "gitintro.html",
+    "href": "gitintro.html",
+    "title": "An Brief Introduction to Git",
+    "section": "",
+    "text": "Version control of you code and other files. Allow you to go back in time. No more:\n\nThesis.tex\nThesisMidTerm.tex\nThesisFinal.tex\nThesisFinal2.tex\nThesisReallyFinal.tex\nThesisReallyReallyFinal.tex\n\nCollaboration. Work on the same code separately and merge later.\nDevelopment. Test new code features with branches. Abandon or merge.\nShare code (GitHub)"
+  },
+  {
+    "objectID": "gitintro.html#use-cases-for-git",
+    "href": "gitintro.html#use-cases-for-git",
+    "title": "An Brief Introduction to Git",
+    "section": "",
+    "text": "Version control of you code and other files. Allow you to go back in time. No more:\n\nThesis.tex\nThesisMidTerm.tex\nThesisFinal.tex\nThesisFinal2.tex\nThesisReallyFinal.tex\nThesisReallyReallyFinal.tex\n\nCollaboration. Work on the same code separately and merge later.\nDevelopment. Test new code features with branches. Abandon or merge.\nShare code (GitHub)"
+  },
+  {
+    "objectID": "gitintro.html#git-is-part-of-our-culture",
+    "href": "gitintro.html#git-is-part-of-our-culture",
+    "title": "An Brief Introduction to Git",
+    "section": "Git is part of our culture",
+    "text": "Git is part of our culture\n\n\nSource: Meme Git Compilation"
+  },
+  {
+    "objectID": "gitintro.html#github",
+    "href": "gitintro.html#github",
+    "title": "An Brief Introduction to Git",
+    "section": "GitHub",
+    "text": "GitHub\n\n\nDaniel Stenberg’s blog (creator of curl)"
+  }
+]

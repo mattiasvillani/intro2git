@@ -1,0 +1,101 @@
+
+Notes:
+- `toc: true` gives you a navigation structure closer to Beamer’s section navigation.
+- `controls: false` approximates `\beamertemplatenavigationsymbolsempty`.
+
+---
+
+## 2) `beamer-luebeck-beaver.css`
+
+```css
+/* Palatino-compatible serif: TeX Gyre Pagella */
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/tex-gyre-pagella@5.0.12/index.css");
+
+/* Optional clean sans for headings (close to Beamer’s sans headings feel) */
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.20/index.css");
+
+/* Beaver-like accent (maroon-ish) */
+:root {
+  --beaver-accent: #8a1f1f;
+  --beaver-accent-soft: rgba(138, 31, 31, 0.15);
+}
+
+/* Base typography: Palatino look */
+.reveal {
+  font-family: "TeX Gyre Pagella", "Palatino Linotype", Palatino, serif;
+  font-size: 1.35rem;
+  line-height: 1.45;
+}
+
+/* Headings: restrained, lecture-friendly */
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-family: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: #111;
+  margin-bottom: 0.6em;
+}
+
+/* Left-align content (Beamer-like) */
+.reveal .slides section {
+  text-align: left;
+}
+
+/* Links + emphasis in beaver accent */
+.reveal a {
+  color: var(--beaver-accent);
+  text-decoration: none;
+}
+.reveal a:hover {
+  text-decoration: underline;
+}
+
+/* Progress bar in beaver accent */
+.reveal .progress {
+  height: 6px;
+}
+.reveal .progress span {
+  background: var(--beaver-accent);
+}
+
+/* Slide numbers subdued */
+.reveal .slide-number {
+  background: transparent;
+  color: #666;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 0.8rem;
+}
+
+/* Subtle accent rule under headings (optional, but often feels “beamer”) */
+.reveal h2::after {
+  content: "";
+  display: block;
+  margin-top: 0.35em;
+  width: 3.2em;
+  height: 4px;
+  background: var(--beaver-accent);
+  opacity: 0.9;
+}
+
+/* Code blocks: neutral (avoid “web app” look) */
+.reveal pre {
+  border: 1px solid #e6e6e6;
+  border-left: 6px solid var(--beaver-accent-soft);
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  background: #fafafa;
+}
+.reveal code {
+  font-size: 0.9em;
+}
+
+/* Lists: slightly tighter (common Beamer feel) */
+.reveal ul,
+.reveal ol {
+  margin-top: 0.4em;
+}
+.reveal li {
+  margin: 0.25em 0;
+}

@@ -1,0 +1,43 @@
+---
+title: "An Brief Introduction to Git"
+author: "Mattias Villani"
+editor: visual
+---
+
+## Use cases for Git
+
+-   **Version control** of you code and other files. Allow you to go back in time. No more:
+
+    -   Thesis.tex
+
+    -   ThesisMidTerm.tex
+
+    -   ThesisFinal.tex
+
+    -   ThesisFinal2.tex
+
+    -   ThesisReallyFinal.tex
+
+    -   ThesisReallyReallyFinal.tex
+
+-   **Collaboration**. Work on the same code separately and merge later.
+
+-   **Development**. Test new code features with branches. Abandon or merge.
+
+-   **Share** code (GitHub)
+
+## Git is part of our culture
+
+![](figs/GitEmergencey.png){width="221"}
+
+![](figs/gitfiregirlmeme.webp){width="342"}
+
+Source: [**Meme Git Compilation**](https://medium.com/@lulu.ilmaknun.q/kompilasi-meme-git-e2fe49c6e33e)
+
+## GitHub
+
+![](figs/VillaniGithub.png)
+
+![](figs/github-steel2.jpg)
+
+[Daniel Stenberg's blog](https://daniel.haxx.se/blog/2021/03/23/github-steel/) (creator of curl)
