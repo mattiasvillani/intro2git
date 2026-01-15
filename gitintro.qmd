@@ -54,7 +54,7 @@ Version control the right way 😊 (but initially: 😵 )
 
 -   Git was famously created by Linus Torvalds (creator of the Linux kernel) in a couple of weeks.
 
-![](figs/torvalds.jpeg){fig-align="center" width="363"}
+![Linus has opinions. Here Nvidia is getting the finger for not collaborating well.](figs/torvalds.jpeg){fig-align="center" width="363"}
 
 -   Git is a **decentralized** version control system:
 

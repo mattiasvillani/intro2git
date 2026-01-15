@@ -102,7 +102,7 @@
     "href": "gitintro.html#what-is-git",
     "title": "An Brief Introduction to Git",
     "section": "What is Git?",
-    "text": "What is Git?\n\nGit was famously created by Linus Torvalds (creator of the Linux kernel) in a couple of weeks.\n\n\n\n\n\n\n\nGit is a decentralized version control system:\n\nUsers have local repository with full offline version control on their computers.\nCan push to global repository (on Github) to collaborate with others.\n\nUsed by &gt; 90% of developers according to Stack Overflow surveys.\nFast"
+    "text": "What is Git?\n\nGit was famously created by Linus Torvalds (creator of the Linux kernel) in a couple of weeks.\n\n\n\n\nLinus has opinions. Here Nvidia is getting the finger for not collaborating well.\n\n\n\nGit is a decentralized version control system:\n\nUsers have local repository with full offline version control on their computers.\nCan push to global repository (on Github) to collaborate with others.\n\nUsed by &gt; 90% of developers according to Stack Overflow surveys.\nFast"
   },
   {
     "objectID": "gitintro.html#what-is-version-control",
