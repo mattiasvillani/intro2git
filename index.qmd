@@ -34,11 +34,9 @@ Statistics<br> Stockholm University
 
 ### Before the presentation
 
--   Install git
+-   [Install git](https://git-scm.com/install/)
 
--   Make a GitHub account
-
--   Consider downloading the editor VS code
+-   Make a [Github](https://github.com/) account.
 
 ### Plan and material
 
