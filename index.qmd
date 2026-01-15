@@ -18,11 +18,13 @@ editor:
 
 <a class="github-button" href="https://github.com/mattiasvillani/Intro2Git" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star mattiasvillani/Intro2Git on GitHub">Star</a>
 
-> This little presentation was initially prepared as introduction to Git for master students in Statistics at Stockholm University
+> This little presentation was initially prepared as introduction to Git
+> for master students in Statistics at Stockholm University
 
 ### Aim
 
-This presentation aims to give a very brief introduction to Git and Github.
+This presentation aims to give a very brief introduction to Git and
+Github.
 
 ### Instructor
 
@@ -32,20 +34,16 @@ Statistics<br> Stockholm University
 
 ### Before the presentation
 
-- Install git
+-   Install git
 
-- Make a GitHub account
+-   Make a GitHub account
 
-- Consider downloading the editor VS code
-
+-   Consider downloading the editor VS code
 
 ### Plan and material
 
-------------------------------------------------------------------------
-
-
+## [intro to git](gitintro.qmd)
 
 ### More material
 
 [Books, courses and podcasts etc about Git]()<br>
-

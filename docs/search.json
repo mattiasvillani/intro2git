@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Intro to Git",
     "section": "",
-    "text": "Star\n\nThis little presentation was initially prepared as introduction to Git for master students in Statistics at Stockholm University\n\n\nAim\nThis presentation aims to give a very brief introduction to Git and Github.\n\n\nInstructor\n\nMattias Villani Professor of Statistics Stockholm University\n\n\nBefore the presentation\n\nInstall git\nMake a GitHub account\nConsider downloading the editor VS code\n\n\n\nPlan and material\n\n\n\nMore material\nBooks, courses and podcasts etc about Git"
+    "text": "Star"
   },
   {
     "objectID": "git.html#introduction",
@@ -53,21 +53,21 @@
     "href": "gitintro.html",
     "title": "An Brief Introduction to Git",
     "section": "",
-    "text": "Version control of you code and other files. Allow you to go back in time. No more:\n\nThesis.tex\nThesisMidTerm.tex\nThesisFinal.tex\nThesisFinal2.tex\nThesisReallyFinal.tex\nThesisReallyReallyFinal.tex\n\nCollaboration. Work on the same code separately and merge later.\nDevelopment. Test new code features with branches. Abandon or merge.\nShare code (GitHub)"
+    "text": "Version control of your code and other files.\nAllows you to go back in time. No more:\n\nThesis_v1.tex\nThesisFinal.tex\nThesisReallyFinal.tex\nThesisReallyReallyFinal.tex\n\nDevelopment. Test new code features with branches. Abandon or merge.\nCollaboration. Work on the same code separately and merge later.\nShare code (and show off code) (GitHub)"
   },
   {
     "objectID": "gitintro.html#use-cases-for-git",
     "href": "gitintro.html#use-cases-for-git",
     "title": "An Brief Introduction to Git",
     "section": "",
-    "text": "Version control of you code and other files. Allow you to go back in time. No more:\n\nThesis.tex\nThesisMidTerm.tex\nThesisFinal.tex\nThesisFinal2.tex\nThesisReallyFinal.tex\nThesisReallyReallyFinal.tex\n\nCollaboration. Work on the same code separately and merge later.\nDevelopment. Test new code features with branches. Abandon or merge.\nShare code (GitHub)"
+    "text": "Version control of your code and other files.\nAllows you to go back in time. No more:\n\nThesis_v1.tex\nThesisFinal.tex\nThesisReallyFinal.tex\nThesisReallyReallyFinal.tex\n\nDevelopment. Test new code features with branches. Abandon or merge.\nCollaboration. Work on the same code separately and merge later.\nShare code (and show off code) (GitHub)"
   },
   {
     "objectID": "gitintro.html#git-is-part-of-our-culture",
     "href": "gitintro.html#git-is-part-of-our-culture",
     "title": "An Brief Introduction to Git",
     "section": "Git is part of our culture",
-    "text": "Git is part of our culture\n\n\nSource: Meme Git Compilation"
+    "text": "Git is part of our culture\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSource: Meme Git Compilation"
   },
   {
     "objectID": "gitintro.html#github",
@@ -75,5 +75,110 @@
     "title": "An Brief Introduction to Git",
     "section": "GitHub",
     "text": "GitHub\n\n\nDaniel Stenberg’s blog (creator of curl)"
+  },
+  {
+    "objectID": "index.html#intro-to-git",
+    "href": "index.html#intro-to-git",
+    "title": "Intro to Git",
+    "section": "intro to git",
+    "text": "intro to git\n\nMore material\nBooks, courses and podcasts etc about Git"
+  },
+  {
+    "objectID": "gitintro.html#giting-started",
+    "href": "gitintro.html#giting-started",
+    "title": "An Brief Introduction to Git",
+    "section": "Giting started",
+    "text": "Giting started\n\nDownload git from: https://git-scm.com/download\nMake a free github account.\nBasics: work from the terminal:\n\nLinux/Mac: use the system terminal\nWindows: use Git Bash from: https://gitforwindows.org/\n\nConvenient: work from RStudio or VS Code.\nSerious: Dedicated git software: Gitkraken and more.\n\n\n\n\nGit tab in Rstudio\n\n\n\n\n\nGit in VS code\n\n\n\n\n\nGit in VS code"
+  },
+  {
+    "objectID": "gitintro.html#initialize-git-repository",
+    "href": "gitintro.html#initialize-git-repository",
+    "title": "An Brief Introduction to Git",
+    "section": "Initialize git repository",
+    "text": "Initialize git repository\n&gt; mkdir myrepo # create empty directory to hold your git repo\n&gt; cd myrepo    # move to myrepo folder\n&gt; git init     # initialize the git repo\nInitialized empty Git repository in /home/mv/myrepo/.git/\n&gt; ls -a        # list all files, incl hidden files and folders starting with . \n.  ..  .git"
+  },
+  {
+    "objectID": "gitintro.html#what-is-git",
+    "href": "gitintro.html#what-is-git",
+    "title": "An Brief Introduction to Git",
+    "section": "What is Git?",
+    "text": "What is Git?\n\nGit was famously created by Linus Torvalds (creator of the Linux kernel) in a couple of weeks.\n\n\n\n\n\n\n\nGit is a decentralized version control system:\n\nUsers have local repository with full offline version control on their computers.\nCan push to global repository (on Github) to collaborate with others.\n\nUsed by &gt; 90% of developers according to Stack Overflow surveys.\nFast"
+  },
+  {
+    "objectID": "gitintro.html#what-is-version-control",
+    "href": "gitintro.html#what-is-version-control",
+    "title": "An Brief Introduction to Git",
+    "section": "What is version control?",
+    "text": "What is version control?\nVersion control by a thousand folders 🤢\n\nVersion control the right way 😊 (but initially: 😵 )\n\n\nCommits are well defined chunks of changes.\nKnows what the changes were, who did the change, and when they were made.\nCan revert a commit to undo changes.\nDevelopment in branches that can abandoned or used (merged)."
+  },
+  {
+    "objectID": "gitintro.html#what-is-github",
+    "href": "gitintro.html#what-is-github",
+    "title": "An Brief Introduction to Git",
+    "section": "What is GitHub?",
+    "text": "What is GitHub?\n\nPlace for hosting repositories online.\nCollaboration hub. A structured way to propose changes, review code, discuss, and approve before merging.\nForks, Issues, Pull request, activity etc.\nGithub actions for automated workflows (e.g. test your code on other operating systems)\n\n\n\nDaniel Stenberg’s blog (creator of curl)"
+  },
+  {
+    "objectID": "gitintro.html#what-git-and-github-can-do-for-you",
+    "href": "gitintro.html#what-git-and-github-can-do-for-you",
+    "title": "An Brief Introduction to Git",
+    "section": "",
+    "text": "Version control of your code and other files.\nAllows you to go back in time. No more:\n\nThesis_v1.tex\nThesisFinal.tex\nThesisReallyFinal.tex\nThesisReallyReallyFinal.tex\n\nDevelopment. Test new code features with branches. Abandon or merge.\nCollaboration. Work on the same code separately and merge later.\nShare code (and show off code) (GitHub)"
+  },
+  {
+    "objectID": "gitintro.html#git-concepts-and-commands",
+    "href": "gitintro.html#git-concepts-and-commands",
+    "title": "An Brief Introduction to Git",
+    "section": "Git concepts and commands",
+    "text": "Git concepts and commands"
+  },
+  {
+    "objectID": "gitintro.html#add-and-commit-a-file",
+    "href": "gitintro.html#add-and-commit-a-file",
+    "title": "An Brief Introduction to Git",
+    "section": "Add and commit a file",
+    "text": "Add and commit a file\n&gt; echo \"hello, git!\" &gt; file1.txt  # Opens a new file and puts hello, git! on first line\n&gt; git status  # shows that file1.txt is untracked by git\n&gt; git add .   # adds all files to the staging area (index)\n&gt; git status  # shows that file1.txt is staged\n&gt; git commit -m \"added a first line to the project\"\n&gt; git status  # shows that the working directory is clean, nothing new to commit"
+  },
+  {
+    "objectID": "gitintro.html#pushing-to-remote-on-github",
+    "href": "gitintro.html#pushing-to-remote-on-github",
+    "title": "An Brief Introduction to Git",
+    "section": "Pushing to remote on Github",
+    "text": "Pushing to remote on Github\nGo to github.com and make a free Github account.\nOn your Github page, click Repositories tab and then make a new repository by clicking . Pick a name for the repo and optionally add a readme file and a license.\nCopy the code from the section …or push an existing repository from the command line in the terminal:\n&gt; git remote add origin git@github.com:mattiasvillani/myrepo.git # adds a remote repo on github to your local repo. The repo gets the name origin, by convention.\n&gt; git branch -M main # renames your default branch to main\n&gt; git push -u origin main # link the local branch to the remote branch and push your files to your github repository's main branch\nYour local files and (only one for the moment) repository is now in sync with the remote repo on Github."
+  },
+  {
+    "objectID": "gitintro.html#pulling-from-a-remote-on-github",
+    "href": "gitintro.html#pulling-from-a-remote-on-github",
+    "title": "An Brief Introduction to Git",
+    "section": "Pulling from a remote on Github",
+    "text": "Pulling from a remote on Github\n\nGo to your Github repo and refresh the page to see your files there.\nAdd a README.md file by clicking on the big green button. Commit the file directly on github.\nIn your terminal get the git info from your github repo with git fetch\n&gt; git fetch # downloads new commits from the remote\nMerge the commit from remote to your local repo with git merge\n&gt; git merge\nYou can do the fetch and merge steps as one with git pull.\ngit add . (note the period) adds all files in the current directory.\ngit commit -am “this is a commit” adds and commits at the same time."
+  },
+  {
+    "objectID": "gitintro.html#working-with-git-in-rstudio-and-vs-code",
+    "href": "gitintro.html#working-with-git-in-rstudio-and-vs-code",
+    "title": "An Brief Introduction to Git",
+    "section": "Working with Git in RStudio and VS code",
+    "text": "Working with Git in RStudio and VS code\nRStudio:\n\nMake an Rstudio project in your code folder (myrepo).\nA Git tab should appear in the upper left window pane with all the things we did above: commit, pull, push etc.\n\nVS code:\n\nclick the source control icon in the left panel:"
+  },
+  {
+    "objectID": "gitintro.html#github-pages",
+    "href": "gitintro.html#github-pages",
+    "title": "An Brief Introduction to Git",
+    "section": "Github pages",
+    "text": "Github pages\n\nGithub lets you host webpages on github pages.\nMy web page at mattiasvillani.com is actually hosted on Github. Its adress is really mattiasvillani.github.io, I pay 20 USD a year for the domain name).\nMy workflow:\n\nMake a Quarto website for a new course/project.\nUse Quarto to build the web page.\nPush the webpage to a Github repo.\nUse Github pages to show the webpage.\n(Use Github action to build the webpage automatically when doing a git push)"
+  },
+  {
+    "objectID": "gitintro.html#working-with-branches",
+    "href": "gitintro.html#working-with-branches",
+    "title": "An Brief Introduction to Git",
+    "section": "Working with branches",
+    "text": "Working with branches\n\nA branch (for example named dev) lets you experiment with a new feature in your code without affecting your main version (branch).\n&gt; git branch # shows all branches wih a * on currently checkout branch\n&gt; git dev    # creates a new branch named dev\n&gt; git switch dev # switches to (makes active) the dev branch\n&gt; echo \"hello, git on dev!\" &gt; file2.txt # makes a new file\n&gt; git add .  # staging all files, that is file2.txt\n&gt; git commit -m \"adding hello on dev\" \" # commit to local repo\n\n\n\n\n\n\nNote\n\n\n\ngit switch used be called git checkout, and that still works.\n\n\nCheck your local folder in your File Manager. The file file2.txt is there. No surprise.\nNow checkout the main branch again with git switch main. Now check your File Manager again. file2.txt is not there!\nCheckout the dev branch again (git switch dev). The file file2.txt is back!\nTo push your branch to github, do this when dev is checked out\n&gt; git push -u origin dev # pushes the dev branch to github and links the local repo branch dev to github branch dev\n\nGo to github (refresh page) and see that you have two branches now (dropdown meny upper left corner).\nIf dev was a successfully added feature, then merge the dev branch into main.\n&gt; git switch main \n&gt; git merge dev # file2.txt is now part of main\n&gt; git push      # pushes the changes to github\n&gt; git branch -d dev # clean up by deleting the dev branch\n&gt; git push origin --delete dev # if you also want to delete on github"
+  },
+  {
+    "objectID": "gitintro.html#some-more-git",
+    "href": "gitintro.html#some-more-git",
+    "title": "An Brief Introduction to Git",
+    "section": "Some more git",
+    "text": "Some more git\n\nSometimes you try to merge two files that conflict. You then have to resolve the conflict. This can be a headache, but basically means that you have to decide for each change, which file “wins”. There are merge tools for this.\nThe file .gitignore (create it in your repo) can be used to decide which files git will ignore (not track). For example *.Rproj or .DS_Store\ngit log shows history (commits)\ngit log --oneline --graph --all gives more info, also on existing branches.\ngit clone git@github.com:mattiasvillani/myrepo.git makes copy (clone) of a repository on github to your current directory.\nYou can fork a github repository, meaning that that github repository is copied to your github with links to the original repository.\nForking is a way to suggest changes to someones code (make a pull request (PR)), which they can then review and hopefully merge into their repository."
   }
 ]
