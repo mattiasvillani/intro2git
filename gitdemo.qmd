@@ -1,0 +1,125 @@
+---
+title: "Git and Github - Live Demo"
+author: "Mattias Villani"
+editor: visual
+---
+
+## Initialize git repository
+
+``` bash
+> mkdir myrepo # create empty directory to hold your git repo
+> cd myrepo    # move to myrepo folder
+> git init     # initialize the git repo
+Initialized empty Git repository in /home/mv/myrepo/.git/
+> ls -a        # list all files, incl hidden files and folders starting with . 
+.  ..  .git
+```
+
+## Add and commit a file
+
+```{bash}
+> echo "hello, git!" > file1.txt  # Opens a new file and puts hello, git! on first line
+> git status  # shows that file1.txt is untracked by git
+> git add .   # adds all files to the staging area (index)
+> git status  # shows that file1.txt is staged
+> git commit -m "added a first line to the project"
+> git status  # shows that the working directory is clean, nothing new to commit
+```
+
+## Pushing to remote on Github
+
+Go to [github.com](https://github.com/) and make a free Github account.
+
+On your Github page, click *Repositories* tab and then make a new repository by clicking ![](figs/newrepobutton.png){width="42" height="18"}. Pick a name for the repo and optionally add a readme file and a license.
+
+Copy the code from the section **…or push an existing repository from the command line** in the terminal:
+
+```{bash}
+> git remote add origin git@github.com:mattiasvillani/myrepo.git # adds a remote repo on github to your local repo. The repo gets the name origin, by convention.
+> git branch -M main # renames your default branch to main
+> git push -u origin main # link the local branch to the remote branch and push your files to your github repository's main branch
+```
+
+Your local files and (only one for the moment) repository is now in sync with the remote repo on Github.
+
+## Pulling from a remote on Github
+
+-   Go to your Github repo and refresh the page to see your files there.
+
+-   Add a README.md file by clicking on the big green button. Commit the file directly on github.
+
+-   In your terminal get the git info from your github repo with **git fetch**
+
+    ```{bash}
+    > git fetch # downloads new commits from the remote
+    ```
+
+-   Merge the commit from remote to your local repo with **git merge**
+
+    ```{bash}
+    > git merge
+    ```
+
+-   You can do the fetch and merge steps as one with **git pull**.
+
+-   `git add .` (note the period) adds all files in the current directory.
+
+-   `git commit -am` "this is a commit" adds and commits at the same time.
+
+## Working with branches
+
+-   A branch (for example named `dev`) lets you experiment with a new feature in your code without affecting your `main` version (branch).
+
+    ```{bash}
+    > git branch # shows all branches wih a * on currently checkout branch
+    > git branch dev    # creates a new branch named dev
+    > git switch dev # switches to (makes active) the dev branch
+    > echo "hello, git on dev!" > file2.txt # makes a new file
+    > git add .  # staging all files, that is file2.txt
+    > git commit -m "adding hello on dev" " # commit to local repo
+    ```
+
+    `git switch` used be called `git checkout`, and that still works.
+
+-   Check your local folder in your File Manager. The file file2.txt is there. No surprise.
+
+-   Now checkout the main branch again with `git switch main`. Now check your File Manager again. file2.txt is not there!
+
+-   Checkout the dev branch again (`git switch dev`). The file file2.txt is back!
+
+-   To push your branch to github, do this when `dev` is checked out
+
+    ```{bash}
+    > git push -u origin dev # pushes the dev branch to github and links the local repo branch dev to github branch dev
+
+    ```
+
+-   Go to github (refresh page) and see that you have two branches now (dropdown meny upper left corner).
+
+-   If `dev` was a successfully added feature, then merge the `dev` branch into `main`.
+
+    ```{bash}
+    > git switch main 
+    > git merge dev # file2.txt is now part of main
+    > git push      # pushes the changes to github
+    > git branch -d dev # clean up by deleting the dev branch
+    > git push origin --delete dev # if you also want to delete on github
+    ```
+
+## Some more git
+
+-   Sometimes you try to merge two files that conflict. You then have to resolve the conflict. This can be a headache, but basically means that you have to decide for each change, which file "wins". There are **merge tools** for this.
+
+-   The file `.gitignore` (create it in your repo) can be used to decide which files git will ignore (not track). For example `*.Rproj` or `.DS_Store`
+
+-   `git log` shows history (commits)
+
+-   `git log --oneline --graph --all` gives more info, also on existing branches.
+
+-   `git clone git@github.com:mattiasvillani/myrepo.git` makes copy (clone) of a repository on github to your current directory.
+
+-   You can **fork** a github repository, meaning that that github repository is copied to your github with links to the original repository.
+
+-   Forking is a way to suggest changes to someones code (make a **pull request** (**PR**)), which they can then review and hopefully merge into their repository.
+
+![](figs/fork.png){fig-align="center"}

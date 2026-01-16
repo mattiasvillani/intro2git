@@ -15,6 +15,10 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: gitintro.qmd
+        text: Git intro
+      - href: gitdemo.qmd
+        text: Git demo
         
   page-footer:
     center:

@@ -8,7 +8,7 @@
 
 <meta name="author" content="Mattias Villani">
 
-<title>An Brief Introduction to Git</title>
+<title>Git and Github - Live Demo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -279,11 +314,11 @@ nav#TOC {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./gitintro.html" aria-current="page"> 
+    <a class="nav-link" href="./gitintro.html"> 
 <span class="menu-text">Git intro</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./gitdemo.html"> 
+    <a class="nav-link active" href="./gitdemo.html" aria-current="page"> 
 <span class="menu-text">Git demo</span></a>
   </li>  
 </ul>
@@ -303,15 +338,14 @@ nav#TOC {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#what-git-and-github-can-do-for-you" id="toc-what-git-and-github-can-do-for-you" class="nav-link active" data-scroll-target="#what-git-and-github-can-do-for-you">What Git (and Github) can do for you</a></li>
-  <li><a href="#git-is-part-of-our-culture" id="toc-git-is-part-of-our-culture" class="nav-link" data-scroll-target="#git-is-part-of-our-culture">Git is part of our culture</a></li>
-  <li><a href="#what-is-version-control" id="toc-what-is-version-control" class="nav-link" data-scroll-target="#what-is-version-control">What is version control?</a></li>
-  <li><a href="#what-is-git" id="toc-what-is-git" class="nav-link" data-scroll-target="#what-is-git">What is Git?</a></li>
-  <li><a href="#what-is-github" id="toc-what-is-github" class="nav-link" data-scroll-target="#what-is-github">What is GitHub?</a></li>
-  <li><a href="#git-concepts-and-commands" id="toc-git-concepts-and-commands" class="nav-link" data-scroll-target="#git-concepts-and-commands">Git concepts and commands</a></li>
-  <li><a href="#giting-started" id="toc-giting-started" class="nav-link" data-scroll-target="#giting-started">Giting started</a></li>
+  <li><a href="#initialize-git-repository" id="toc-initialize-git-repository" class="nav-link active" data-scroll-target="#initialize-git-repository">Initialize git repository</a></li>
+  <li><a href="#add-and-commit-a-file" id="toc-add-and-commit-a-file" class="nav-link" data-scroll-target="#add-and-commit-a-file">Add and commit a file</a></li>
+  <li><a href="#pushing-to-remote-on-github" id="toc-pushing-to-remote-on-github" class="nav-link" data-scroll-target="#pushing-to-remote-on-github">Pushing to remote on Github</a></li>
+  <li><a href="#pulling-from-a-remote-on-github" id="toc-pulling-from-a-remote-on-github" class="nav-link" data-scroll-target="#pulling-from-a-remote-on-github">Pulling from a remote on Github</a></li>
   <li><a href="#working-with-git-in-rstudio-and-vs-code" id="toc-working-with-git-in-rstudio-and-vs-code" class="nav-link" data-scroll-target="#working-with-git-in-rstudio-and-vs-code">Working with Git in RStudio and VS code</a></li>
   <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages">Github pages</a></li>
+  <li><a href="#working-with-branches" id="toc-working-with-branches" class="nav-link" data-scroll-target="#working-with-branches">Working with branches</a></li>
+  <li><a href="#some-more-git" id="toc-some-more-git" class="nav-link" data-scroll-target="#some-more-git">Some more git</a></li>
   </ul>
 </nav>
     </div>
@@ -321,7 +355,7 @@ nav#TOC {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">An Brief Introduction to Git</h1>
+<h1 class="title">Git and Github - Live Demo</h1>
 </div>
 
 
@@ -344,132 +378,54 @@ nav#TOC {
 </header>
 
 
-<section id="what-git-and-github-can-do-for-you" class="level2">
-<h2 class="anchored" data-anchor-id="what-git-and-github-can-do-for-you">What Git (and Github) can do for you</h2>
-<ul>
-<li><p><strong>Version control</strong> of your code and other files.</p></li>
-<li><p>Allows you to <strong>go back in time</strong>. No more:</p>
-<ul>
-<li><p>Thesis_v1.tex</p></li>
-<li><p>ThesisFinal.tex</p></li>
-<li><p>ThesisReallyFinal.tex</p></li>
-<li><p>ThesisReallyReallyFinal.tex</p></li>
-</ul></li>
-<li><p><strong>Development</strong>. Test new code features with branches. Abandon or merge.</p></li>
-<li><p><strong>Collaboration</strong>. Work on the same code separately and merge later.</p></li>
-<li><p><strong>Share</strong> code (and show off code) (GitHub)</p></li>
-</ul>
+<section id="initialize-git-repository" class="level2">
+<h2 class="anchored" data-anchor-id="initialize-git-repository">Initialize git repository</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> mkdir <span class="ex">myrepo</span> <span class="co"># create empty directory to hold your git repo</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> cd <span class="ex">myrepo</span>    <span class="co"># move to myrepo folder</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> git <span class="ex">init</span>     <span class="co"># initialize the git repo</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Initialized</span> empty Git repository in /home/mv/myrepo/.git/</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> ls <span class="ex">-a</span>        <span class="co"># list all files, incl hidden files and folders starting with . </span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">.</span>  ..  .git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="git-is-part-of-our-culture" class="level2">
-<h2 class="anchored" data-anchor-id="git-is-part-of-our-culture">Git is part of our culture</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 36%">
-<col style="width: 37%">
-<col style="width: 26%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><img src="figs/GitEmergencey.png" class="img-fluid quarto-figure quarto-figure-center" width="147"></td>
-<td><img src="figs/gitfiregirlmeme.webp" class="img-fluid quarto-figure quarto-figure-center" width="200"></td>
-<td><img src="figs/gitmergememe.jpg" class="img-fluid" width="225"></td>
-</tr>
-</tbody>
-</table>
-<p>Source: <a href="https://medium.com/@lulu.ilmaknun.q/kompilasi-meme-git-e2fe49c6e33e"><strong>Meme Git Compilation</strong></a></p>
+<section id="add-and-commit-a-file" class="level2">
+<h2 class="anchored" data-anchor-id="add-and-commit-a-file">Add and commit a file</h2>
+<pre class="{bash}"><code>&gt; echo "hello, git!" &gt; file1.txt  # Opens a new file and puts hello, git! on first line
+&gt; git status  # shows that file1.txt is untracked by git
+&gt; git add .   # adds all files to the staging area (index)
+&gt; git status  # shows that file1.txt is staged
+&gt; git commit -m "added a first line to the project"
+&gt; git status  # shows that the working directory is clean, nothing new to commit</code></pre>
 </section>
-<section id="what-is-version-control" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-version-control">What is version control?</h2>
-<p>Version control by a thousand folders 🤢</p>
-<p><img src="figs/VersionControlBad.webp" class="img-fluid"></p>
-<p>Version control the right way 😊 (but initially: 😵 )</p>
-<p><img src="figs/VersionControl.webp" class="img-fluid"></p>
-<ul>
-<li><p>Commits are well defined chunks of changes.</p></li>
-<li><p>Knows <em>what</em> the changes were, <em>who</em> did the change, and <em>when</em> they were made.</p></li>
-<li><p>Can revert a commit to undo changes.</p></li>
-<li><p>Development in branches that can abandoned or used (merged).</p></li>
-</ul>
+<section id="pushing-to-remote-on-github" class="level2">
+<h2 class="anchored" data-anchor-id="pushing-to-remote-on-github">Pushing to remote on Github</h2>
+<p>Go to <a href="https://github.com/">github.com</a> and make a free Github account.</p>
+<p>On your Github page, click <em>Repositories</em> tab and then make a new repository by clicking <img src="figs/newrepobutton.png" width="42" height="18">. Pick a name for the repo and optionally add a readme file and a license.</p>
+<p>Copy the code from the section <strong>…or push an existing repository from the command line</strong> in the terminal:</p>
+<pre class="{bash}"><code>&gt; git remote add origin git@github.com:mattiasvillani/myrepo.git # adds a remote repo on github to your local repo. The repo gets the name origin, by convention.
+&gt; git branch -M main # renames your default branch to main
+&gt; git push -u origin main # link the local branch to the remote branch and push your files to your github repository's main branch</code></pre>
+<p>Your local files and (only one for the moment) repository is now in sync with the remote repo on Github.</p>
 </section>
-<section id="what-is-git" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-git">What is Git?</h2>
+<section id="pulling-from-a-remote-on-github" class="level2">
+<h2 class="anchored" data-anchor-id="pulling-from-a-remote-on-github">Pulling from a remote on Github</h2>
 <ul>
-<li>Git was famously created by Linus Torvalds (creator of the Linux kernel) in a couple of weeks.</li>
+<li><p>Go to your Github repo and refresh the page to see your files there.</p></li>
+<li><p>Add a README.md file by clicking on the big green button. Commit the file directly on github.</p></li>
+<li><p>In your terminal get the git info from your github repo with <strong>git fetch</strong></p>
+<pre class="{bash}"><code>&gt; git fetch # downloads new commits from the remote</code></pre></li>
+<li><p>Merge the commit from remote to your local repo with <strong>git merge</strong></p>
+<pre class="{bash}"><code>&gt; git merge</code></pre></li>
+<li><p>You can do the fetch and merge steps as one with <strong>git pull</strong>.</p></li>
+<li><p><code>git add .</code> (note the period) adds all files in the current directory.</p></li>
+<li><p><code>git commit -am</code> “this is a commit” adds and commits at the same time.</p></li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/torvalds.jpeg" class="img-fluid figure-img" width="363"></p>
-<figcaption>Linus has opinions. Here Nvidia is getting the finger for not collaborating well.</figcaption>
-</figure>
-</div>
-<ul>
-<li><p>Git is a <strong>decentralized</strong> version control system:</p>
-<ul>
-<li><p>Users have local repository with full offline version control on their computers.</p></li>
-<li><p>Can push to global repository (on Github) to collaborate with others.</p></li>
-</ul></li>
-<li><p>Used by &gt; 90% of developers according to Stack Overflow surveys.</p></li>
-<li><p>Fast</p></li>
-</ul>
-</section>
-<section id="what-is-github" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-github">What is GitHub?</h2>
-<ul>
-<li><p>Place for hosting repositories online.</p></li>
-<li><p>Collaboration hub. A structured way to propose changes, review code, discuss, and approve before merging.</p></li>
-<li><p>Forks, Issues, Pull request, activity etc.</p></li>
-<li><p><em>Github actions</em> for automated workflows (e.g.&nbsp;test your code on other operating systems)</p></li>
-</ul>
-<p><img src="figs/VillaniGithub.png" class="img-fluid"></p>
-<p><img src="figs/github-steel2.jpg" class="img-fluid"></p>
-<p><a href="https://daniel.haxx.se/blog/2021/03/23/github-steel/">Daniel Stenberg’s blog</a> (creator of curl)</p>
-</section>
-<section id="git-concepts-and-commands" class="level2">
-<h2 class="anchored" data-anchor-id="git-concepts-and-commands">Git concepts and commands</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/gitoperations.webp" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-<section id="giting-started" class="level2">
-<h2 class="anchored" data-anchor-id="giting-started">Giting started</h2>
-<ul>
-<li><p><strong>Download git</strong> from: <a href="https://git-scm.com/download" class="uri">https://git-scm.com/download</a></p></li>
-<li><p>Make a free <strong>github account</strong>.</p></li>
-<li><p>Basics: work from the terminal:</p>
-<ul>
-<li><p>Linux/Mac: use the system terminal</p></li>
-<li><p>Windows: use <em>Git Bash</em> from: <a href="https://gitforwindows.org/" class="uri">https://gitforwindows.org/</a></p></li>
-</ul></li>
-<li><p>Convenient: work from <a href="https://posit.co/download/rstudio-desktop/">RStudio</a> or <a href="https://code.visualstudio.com/">VS Code</a>.</p></li>
-<li><p>Serious: Dedicated git software: <a href="https://www.gitkraken.com/">Gitkraken</a> and more.</p></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/git_rstudio.png" class="img-fluid figure-img" width="516"></p>
-<figcaption>Git tab in Rstudio</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/git_vs.png" class="img-fluid figure-img" width="436"></p>
-<figcaption>Git in VS code</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/gitkraken.png" class="img-fluid figure-img" width="480"></p>
-<figcaption>Git in VS code</figcaption>
-</figure>
-</div>
 </section>
 <section id="working-with-git-in-rstudio-and-vs-code" class="level2">
 <h2 class="anchored" data-anchor-id="working-with-git-in-rstudio-and-vs-code">Working with Git in RStudio and VS code</h2>
 <p><strong>RStudio</strong>:</p>
 <ul>
 <li><p>Make an Rstudio project in your code folder (<em>myrepo</em>).</p></li>
-<li><p>A Git tab should appear in the upper left window pane with all the things covered in the live demo.</p></li>
+<li><p>A Git tab should appear in the upper left window pane with all the things we did above: commit, pull, push etc.</p></li>
 </ul>
 <p><strong>VS code</strong>:</p>
 <ul>
@@ -490,6 +446,49 @@ nav#TOC {
 <li><p>(Use Github action to build the webpage automatically when doing a git push)</p></li>
 </ul></li>
 </ul>
+</section>
+<section id="working-with-branches" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-branches">Working with branches</h2>
+<ul>
+<li><p>A branch (for example named <code>dev</code>) lets you experiment with a new feature in your code without affecting your <code>main</code> version (branch).</p>
+<pre class="{bash}"><code>&gt; git branch # shows all branches wih a * on currently checkout branch
+&gt; git branch dev    # creates a new branch named dev
+&gt; git switch dev # switches to (makes active) the dev branch
+&gt; echo "hello, git on dev!" &gt; file2.txt # makes a new file
+&gt; git add .  # staging all files, that is file2.txt
+&gt; git commit -m "adding hello on dev" " # commit to local repo</code></pre>
+<p><code>git switch</code> used be called <code>git checkout</code>, and that still works.</p></li>
+<li><p>Check your local folder in your File Manager. The file file2.txt is there. No surprise.</p></li>
+<li><p>Now checkout the main branch again with <code>git switch main</code>. Now check your File Manager again. file2.txt is not there!</p></li>
+<li><p>Checkout the dev branch again (<code>git switch dev</code>). The file file2.txt is back!</p></li>
+<li><p>To push your branch to github, do this when <code>dev</code> is checked out</p>
+<pre class="{bash}"><code>&gt; git push -u origin dev # pushes the dev branch to github and links the local repo branch dev to github branch dev
+</code></pre></li>
+<li><p>Go to github (refresh page) and see that you have two branches now (dropdown meny upper left corner).</p></li>
+<li><p>If <code>dev</code> was a successfully added feature, then merge the <code>dev</code> branch into <code>main</code>.</p>
+<pre class="{bash}"><code>&gt; git switch main 
+&gt; git merge dev # file2.txt is now part of main
+&gt; git push      # pushes the changes to github
+&gt; git branch -d dev # clean up by deleting the dev branch
+&gt; git push origin --delete dev # if you also want to delete on github</code></pre></li>
+</ul>
+</section>
+<section id="some-more-git" class="level2">
+<h2 class="anchored" data-anchor-id="some-more-git">Some more git</h2>
+<ul>
+<li><p>Sometimes you try to merge two files that conflict. You then have to resolve the conflict. This can be a headache, but basically means that you have to decide for each change, which file “wins”. There are <strong>merge tools</strong> for this.</p></li>
+<li><p>The file <code>.gitignore</code> (create it in your repo) can be used to decide which files git will ignore (not track). For example <code>*.Rproj</code> or <code>.DS_Store</code></p></li>
+<li><p><code>git log</code> shows history (commits)</p></li>
+<li><p><code>git log --oneline --graph --all</code> gives more info, also on existing branches.</p></li>
+<li><p><code>git clone git@github.com:mattiasvillani/myrepo.git</code> makes copy (clone) of a repository on github to your current directory.</p></li>
+<li><p>You can <strong>fork</strong> a github repository, meaning that that github repository is copied to your github with links to the original repository.</p></li>
+<li><p>Forking is a way to suggest changes to someones code (make a <strong>pull request</strong> (<strong>PR</strong>)), which they can then review and hopefully merge into their repository.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/fork.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 
 
 </section>

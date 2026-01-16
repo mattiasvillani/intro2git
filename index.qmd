@@ -18,13 +18,14 @@ editor:
 
 <a class="github-button" href="https://github.com/mattiasvillani/Intro2Git" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star mattiasvillani/Intro2Git on GitHub">Star</a>
 
-> This little presentation was initially prepared as introduction to Git
-> for master students in Statistics at Stockholm University
+> Presentation prepared as introduction to Git for master students in
+> Statistics at Stockholm University
 
 ### Aim
 
 This presentation aims to give a very brief introduction to Git and
-Github.
+Github, followed by a short live demo. All the commands used in the demo
+are given in the presentation.
 
 ### Instructor
 
@@ -38,10 +39,30 @@ Statistics<br> Stockholm University
 
 -   Make a [Github](https://github.com/) account.
 
-### Plan and material
+### Material
 
-## [intro to git](gitintro.qmd)
+-   [A brief intro to Git](gitintro.qmd)
+-   [Live demo](gitdemo.qmd)
 
-### More material
+### Tooling
 
-[Books, courses and podcasts etc about Git]()<br>
+-   [Git for Windows](https://gitforwindows.org/) (includes Git bash,
+    which is Linux/Mac/Unix-like terminal on Windows, which will match
+    with Git tutorials online)
+
+-   [VS code](https://code.visualstudio.com/) (IDE with useful git tools
+    integrated)
+
+-   [Git
+    Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+    for VS Code (supercharge git with an extension)
+
+-   [Gitkraken](https://www.gitkraken.com/) (very comprehensive software
+    to work with Git)
+
+-   [Rstudio](https://posit.co/download/rstudio-desktop/) (RStudio has
+    git tools built in. Only shown when Rstudio detects a git
+    repository)
+
+-   [Meld](https://meldmerge.org/) (git merge tool, to help you when you
+    get a merge conflict)
