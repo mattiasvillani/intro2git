@@ -193,14 +193,14 @@
     "href": "gitdemo.html",
     "title": "Git and Github - Live Demo",
     "section": "",
-    "text": "&gt; mkdir myrepo # create empty directory to hold your git repo\n&gt; cd myrepo    # move to myrepo folder\n&gt; git init     # initialize the git repo\nInitialized empty Git repository in /home/mv/myrepo/.git/\n&gt; ls -a        # list all files, incl hidden files and folders starting with . \n.  ..  .git"
+    "text": "&gt; mkdir myrepo # create empty directory to hold your git repo\n&gt; cd myrepo    # move to myrepo folder\n&gt; git init     # initialize the git repo\nInitialized empty Git repository in /home/mv/myrepo/.git/\n&gt; ls -a        # list all files, incl hidden files and folders starting with . \n.  ..  .git\nNote that the &gt; sign is just a representation of the so called prompt in your terminal and could be some other symbol on your computer, for example $"
   },
   {
     "objectID": "gitdemo.html#initialize-git-repository",
     "href": "gitdemo.html#initialize-git-repository",
     "title": "Git and Github - Live Demo",
     "section": "",
-    "text": "&gt; mkdir myrepo # create empty directory to hold your git repo\n&gt; cd myrepo    # move to myrepo folder\n&gt; git init     # initialize the git repo\nInitialized empty Git repository in /home/mv/myrepo/.git/\n&gt; ls -a        # list all files, incl hidden files and folders starting with . \n.  ..  .git"
+    "text": "&gt; mkdir myrepo # create empty directory to hold your git repo\n&gt; cd myrepo    # move to myrepo folder\n&gt; git init     # initialize the git repo\nInitialized empty Git repository in /home/mv/myrepo/.git/\n&gt; ls -a        # list all files, incl hidden files and folders starting with . \n.  ..  .git\nNote that the &gt; sign is just a representation of the so called prompt in your terminal and could be some other symbol on your computer, for example $"
   },
   {
     "objectID": "gitdemo.html#add-and-commit-a-file",

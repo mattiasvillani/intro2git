@@ -342,8 +342,6 @@ nav#TOC {
   <li><a href="#add-and-commit-a-file" id="toc-add-and-commit-a-file" class="nav-link" data-scroll-target="#add-and-commit-a-file">Add and commit a file</a></li>
   <li><a href="#pushing-to-remote-on-github" id="toc-pushing-to-remote-on-github" class="nav-link" data-scroll-target="#pushing-to-remote-on-github">Pushing to remote on Github</a></li>
   <li><a href="#pulling-from-a-remote-on-github" id="toc-pulling-from-a-remote-on-github" class="nav-link" data-scroll-target="#pulling-from-a-remote-on-github">Pulling from a remote on Github</a></li>
-  <li><a href="#working-with-git-in-rstudio-and-vs-code" id="toc-working-with-git-in-rstudio-and-vs-code" class="nav-link" data-scroll-target="#working-with-git-in-rstudio-and-vs-code">Working with Git in RStudio and VS code</a></li>
-  <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages">Github pages</a></li>
   <li><a href="#working-with-branches" id="toc-working-with-branches" class="nav-link" data-scroll-target="#working-with-branches">Working with branches</a></li>
   <li><a href="#some-more-git" id="toc-some-more-git" class="nav-link" data-scroll-target="#some-more-git">Some more git</a></li>
   </ul>
@@ -386,6 +384,7 @@ nav#TOC {
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Initialized</span> empty Git repository in /home/mv/myrepo/.git/</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> ls <span class="ex">-a</span>        <span class="co"># list all files, incl hidden files and folders starting with . </span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">.</span>  ..  .git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Note that the <code>&gt;</code> sign is just a representation of the so called <em>prompt</em> in your terminal and could be some other symbol on your computer, for example <code>$</code></p>
 </section>
 <section id="add-and-commit-a-file" class="level2">
 <h2 class="anchored" data-anchor-id="add-and-commit-a-file">Add and commit a file</h2>
@@ -418,33 +417,6 @@ nav#TOC {
 <li><p>You can do the fetch and merge steps as one with <strong>git pull</strong>.</p></li>
 <li><p><code>git add .</code> (note the period) adds all files in the current directory.</p></li>
 <li><p><code>git commit -am</code> “this is a commit” adds and commits at the same time.</p></li>
-</ul>
-</section>
-<section id="working-with-git-in-rstudio-and-vs-code" class="level2">
-<h2 class="anchored" data-anchor-id="working-with-git-in-rstudio-and-vs-code">Working with Git in RStudio and VS code</h2>
-<p><strong>RStudio</strong>:</p>
-<ul>
-<li><p>Make an Rstudio project in your code folder (<em>myrepo</em>).</p></li>
-<li><p>A Git tab should appear in the upper left window pane with all the things we did above: commit, pull, push etc.</p></li>
-</ul>
-<p><strong>VS code</strong>:</p>
-<ul>
-<li>click the source control icon in the left panel: <img src="figs/vscode_sourecontrol.svg" class="img-fluid" width="24"></li>
-</ul>
-</section>
-<section id="github-pages" class="level2">
-<h2 class="anchored" data-anchor-id="github-pages">Github pages</h2>
-<ul>
-<li><p>Github lets you host webpages on github pages.</p></li>
-<li><p>My web page at <a href="https://mattiasvillani.com/">mattiasvillani.com</a> is actually hosted on Github. Its adress is really <a href="https://mattiasvillani.github.io/">mattiasvillani.github.io</a>, I pay 20 USD a year for the domain name).</p></li>
-<li><p>My workflow:</p>
-<ul>
-<li><p>Make a Quarto website for a new course/project.</p></li>
-<li><p>Use Quarto to build the web page.</p></li>
-<li><p>Push the webpage to a Github repo.</p></li>
-<li><p>Use Github pages to show the webpage.</p></li>
-<li><p>(Use Github action to build the webpage automatically when doing a git push)</p></li>
-</ul></li>
 </ul>
 </section>
 <section id="working-with-branches" class="level2">

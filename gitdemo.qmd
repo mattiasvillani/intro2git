@@ -15,6 +15,8 @@ Initialized empty Git repository in /home/mv/myrepo/.git/
 .  ..  .git
 ```
 
+Note that the `>` sign is just a representation of the so called *prompt* in your terminal and could be some other symbol on your computer, for example `$`
+
 ## Add and commit a file
 
 ```{bash}
